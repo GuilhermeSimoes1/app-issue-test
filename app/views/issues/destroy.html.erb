@@ -1,0 +1,5 @@
+<td>
+  <%= link_to "Ver", issue_path(issue) %> |
+  <%= link_to "Editar", edit_issue_path(issue) %> |
+  <%= link_to "Excluir", issue_path(issue), method: :delete, data: { confirm: "Tem certeza?" } %>
+</td>
