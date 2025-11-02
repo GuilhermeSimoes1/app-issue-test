@@ -1,0 +1,24 @@
+<h1>Issues</h1>
+
+<%= link_to "Nova Issue", new_issue_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Location</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @issues.each do |issue| %>
+      <tr>
+        <td><%= issue.title %></td>
+        <td><%= issue.description %></td>
+        <td><%= issue.location %></td>
+        <td><%= issue.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
